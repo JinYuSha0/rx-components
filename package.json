@@ -1,0 +1,31 @@
+{
+  "name": "rx-components",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "scripts": {
+    "dev": "concurrently 'clear' 'rollup -c -w'",
+    "build": "npm run clear && rollup -c",
+    "clear": "rm -rf lib/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shaojinyu",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.1",
+    "@babel/preset-env": "^7.22.4",
+    "@types/react": "^18.2.7",
+    "concurrently": "^8.0.1",
+    "esbuild": "^0.17.19",
+    "rollup": "^3.23.0",
+    "rollup-plugin-dts": "^5.3.0",
+    "rollup-plugin-esbuild": "^5.0.0",
+    "typescript": "^5.0.4"
+  }
+}
